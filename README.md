@@ -19,7 +19,11 @@ This module defines a `UserDTO` data model and a `UserService` class for user ma
 
 - **UserDTO:** Pydantic model with `id` and `name` attributes.
 - **UserService:** Database interaction using SQLAlchemy's `AsyncSession`.
-- 
+
+## Unittests for `hashmap.py` and `users.py`
+
+Unit tests for the `hashmap.py` and `users.py` modules are provided to ensure the correctness and robustness of the implementations.
+
 ## Installation
 
 1. Clone the repository:

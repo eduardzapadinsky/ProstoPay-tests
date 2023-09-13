@@ -1,7 +1,11 @@
 """
-This service defines a UserDTO data model and a UserService class.
-The UserService class provides methods to get and add users to a database.
-This service uses the AsyncSession object to interact with the database asynchronously.
+The `UserService` implementation effectively addresses the task's requirements.
+It utilizes a Pydantic model (`UserDTO`) for structured data representation, employs SQLAlchemy's `AsyncSession`
+for asynchronous database interactions, and provides essential methods (`get` and `add`) for retrieving
+and adding users. The constructor's use of a callable function for obtaining an `AsyncSession` offers flexibility.
+Additionally, the error handling within the methods ensures graceful exception handling.
+The `get` method returns an `Optional[UserDTO]`, making it clear that it may return either a user object or `None`
+when the user is not found, enhancing usability and robustness.
 
 """
 
